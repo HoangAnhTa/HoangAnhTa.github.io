@@ -9,75 +9,38 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Chuong Dang TA"
+title                    : "Hoang Ta"
 title_separator          : "-"
-name                     : &name "Chuong Dang TA"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://ChuongTA.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
-                                                           # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-# repository               : "ChuongTa.github.io"
+name                     : &name "Hoang Ta"
+description              : &description "Hoang Ta's personal portfolio, projects, and self-learning notes."
+url                      : https://HoangAnhTa.github.io
+baseurl                  : ""
+repository               : "HoangAnhTa/HoangAnhTa.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/Main_page/images/ID_Photo.png"
-  name             : "Chuong Dang TA"
-  pronouns         : "he/him"  
-  bio              : "DENSYS-Erasmus Mundus Joint Master Degree || Offshore Wind + Power to X Enthusiast"
-  location         : "Stockholm, Sweden"
-  student          : "Universite de Lorraine & Politechnico di Torino"
+  avatar           : # Place your avatar image in /images/ or /Main_page/images/ and reference it here, e.g. "/images/avatar.jpg"
+  name             : "Hoang Ta"
+  pronouns         : # "he/him"
+  bio              : "Welcome to my personal portfolio and knowledge hub."
+  location         : # Your location
+  student          : # Your school or university
   uri              : # URL
-  email            : "chuong.tadang.hust@gmail.com" 
+  email            : # Your email
 
   # Academic websites
-  # academia         : # URL
-  # arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=IjhRqAsAAAAJ&hl=vi"
-  # inspire-hep      : # URL
-  # impactstory      : # URL
-  orcid            : "https://orcid.org/0009-0009-7530-7430"
-  # semantic         : # URL
-  # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  # researchgate     : # URL
-  # scopus           : # URL
+  # googlescholar    : # URL
+  # orcid            : # URL
 
   # Repositories and software development
-  # bitbucket        : # Username - Update with your username on the site
-  # codepen          : # Username
-  # dribbble         : # Username
-  github             : "ChuongTA"
-  # kaggle           : # Username  
-  # stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
+  github             : "HoangAnhTa"
 
   # Social media
-  # artstation       : # Username
-  # bluesky          : "bsky.app" # Replace this with you Bluesky username
-  # facebook         : # Username
-  # flickr           : # Username
-  # foursquare       : # Username
-  # goodreads        : # Username
-  # google_plus      : # Username
-  # keybase          : # Username
-  # instagram        : # Username
-  # lastfm           : # Username
-  linkedin           : "chuongta"
-  # mastodon         : # URL
-  # medium           : # URL
-  # pinterest        : # Username
-  # soundcloud       : # Username
-  # steam            : # Username
-  # telegram         : # URL
-  # tumblr           : # Username
-  # twitter          : # Username for X / Twitter
-  # vine             : # Username
-  # weibo            : # Username
-  # wikipedia        : # Username
-  # xing             : # Username
-  # youtube          : # Username
-  # zhihu            : # Username
+  # linkedin           : # LinkedIn username or URL
+  # twitter            : # Username for X / Twitter
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
@@ -220,19 +183,10 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  publications:
+  projects:
     output: true
     permalink: /:collection/:path/
-  WindEnergy:
-    output: true
-    permalink: /:collection/:path/
-  EnergyForecasting:
-    output: true
-    permalink: /:collection/:path/
-  MscProjects:
-    output: true
-    permalink: /:collection/:path/
-  MachineLearningProjects:
+  self_learning:
     output: true
     permalink: /:collection/:path/
 
@@ -257,45 +211,20 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _publications
+  # _projects
   - scope:
       path: ""
-      type: publications
+      type: projects
     values:
       layout: single
       author_profile: true
       share: true
-      comments: true
-  #_EnergySystems
+  # _self_learning
   - scope:
       path: ""
-      type: EnergySystems
+      type: self_learning
     values:
       layout: single
-      author_profile: true
-      share: true
-  #_MscProjects
-  - scope:
-      path: ""
-      type: MscProjects
-    values:
-      layout: single
-      author_profile: true
-      share: true
-  #_MachineLearningProjects
-  - scope:
-      path: ""
-      type: MachineLearningProjects
-    values:
-      layout: single
-      author_profile: true
-      share: true
-   #_WindEnergy
-  - scope:
-      path: ""
-      type: WindEnergy
-    values:
-      layout: WindEnergy
       author_profile: true
       share: true
 

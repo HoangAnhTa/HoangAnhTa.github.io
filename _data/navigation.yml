@@ -3,18 +3,11 @@
 # Changing the order here will adjust the order and you can also add additional
 # links. Removing a link prevents it from showing in the header, but does not
 # prevent it from being included in the site.
-#
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
 
 main:
-  - title: "Publications"
-    url: /publications/
-  - title: "Wind Energy"
-    url: /WindEnergy/
-  - title: "Energy Forecasting"
-    url: /EnergyForecasting/
-  - title: "MSc Projects"
-    url: /MscProjects/
-  - title: "Machine Learning"
-    url: /MachineLearningProjects/
+  - title: "My Portfolio"
+    url: /
+  - title: "Projects"
+    url: /projects/
+  - title: "Self Learning"
+    url: /self-learning/
