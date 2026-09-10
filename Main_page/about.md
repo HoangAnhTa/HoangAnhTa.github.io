@@ -33,5 +33,7 @@ I am passionate about building, learning, and sharing knowledge. This portfolio 
 ### 📬 Get in Touch
 
 Feel free to reach out to connect, collaborate, or share ideas:
+- **Email**: [tahoangank06@gmail.com](mailto:tahoangank06@gmail.com)
+- **LinkedIn**: [Hoang Anh Ta](https://www.linkedin.com/in/hoanganhta/)
 - **GitHub**: [@HoangAnhTa](https://github.com/HoangAnhTa)
 - Explore my latest projects on the **[Projects]({{ base_path }}/projects/)** page!
