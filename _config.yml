@@ -9,9 +9,9 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Hoang Ta"
+title                    : "Hoang Anh Ta"
 title_separator          : "-"
-name                     : &name "Hoang Ta"
+name                     : &name "Hoang Anh Ta"
 description              : &description "Hoang Ta's personal portfolio, projects, and self-learning notes."
 url                      : https://HoangAnhTa.github.io
 baseurl                  : ""
