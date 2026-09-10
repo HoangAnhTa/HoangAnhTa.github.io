@@ -11,13 +11,19 @@ author_profile: false
     {% include base_path %}
 
     {% comment %}
-      site.categories only aggregates the built-in _posts collection, and this
-      site keeps its content in custom collections instead, so the grouping is
-      built by hand from every collection that outputs pages. EnergyForecasting
-      is excluded: that collection uses tags: (Keywords, see /tags/) instead.
+      Build a combined list from active collections and posts for category grouping.
+      Use safe empty array fallbacks so sort doesn't crash on nil collections.
     {% endcomment %}
-    {% assign all_docs = site.WindEnergy | concat: site.MscProjects | concat: site.MachineLearningProjects | concat: site.posts %}
-    {% assign all_docs = all_docs | sort: "date" | reverse %}
+    {% assign all_docs = "" | split: "" %}
+    {% for doc in site.projects %}
+      {% assign all_docs = all_docs | push: doc %}
+    {% endfor %}
+    {% for doc in site.self_learning %}
+      {% assign all_docs = all_docs | push: doc %}
+    {% endfor %}
+    {% for doc in site.posts %}
+      {% assign all_docs = all_docs | push: doc %}
+    {% endfor %}
 
     {% assign category_names = "" | split: "" %}
     {% for doc in all_docs %}

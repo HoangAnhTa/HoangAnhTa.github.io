@@ -11,11 +11,10 @@ author_profile: false
     {% include base_path %}
 
     {% comment %}
-      Scoped to the EnergyForecasting collection only: these posts use
-      tags: (displayed as "Keywords") instead of categories:, grouped by
-      hand here since site.tags only aggregates the built-in _posts collection.
+      EnergyForecasting collection no longer exists.
+      Use empty array as fallback to avoid nil sort error.
     {% endcomment %}
-    {% assign all_docs = site.EnergyForecasting | sort: "date" | reverse %}
+    {% assign all_docs = "" | split: "" %}
 
     {% assign keyword_names = "" | split: "" %}
     {% for doc in all_docs %}
