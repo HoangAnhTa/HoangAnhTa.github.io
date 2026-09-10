@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hoang Ta"
+title: "Hoang Anh Ta"
 author_profile: true
 redirect_from: 
   - /about/
@@ -9,7 +9,7 @@ redirect_from:
 
 ## Welcome to My Portfolio
 
-Hello! I am **Hoang Ta** (Hoang Anh Ta). Welcome to my personal space on the web where I document my work, showcase my engineering & technical projects, and share my self-learning journey.
+Hello! I am **Hoang Anh Ta**. Welcome to my personal space on the web where I document my work, showcase my engineering & technical projects, and share my self-learning journey.
 
 ---
 
